@@ -10,6 +10,12 @@ html {
     width: 100%;
 }
 
+body {
+
+    width: 100%;
+}
+
+
 /* Header */
 
 header {
@@ -31,6 +37,7 @@ header {
 
 nav {
     font-size: 1.4rem;
+    margin-bottom: 14px;
 }
 
 nav>a {
@@ -42,18 +49,22 @@ a {
     font-weight: 400;
 }
 
+section {
+    padding: 20px 0;
+}
+
 /* Banner Hero e texto */
 
 .bg-hero {
-    background-image: url(/img/bg-hero.svg);
+    background-image: url(../img/bg-hero.svg);
     width: 100%;
     background-size: cover;
-    height: 580px;
+    height: 700px;
 }
 
 .hero-banner>h1 {
     text-align: center;
-    padding: 160px 0;
+    padding: 220px 0;
     font-size: 4rem;
     font-weight: 800;
     margin: 0px 200px 0 200px;
@@ -131,19 +142,153 @@ a {
     transition: 1s;
 }
 
+/* Seção Sites */
+
+.slider {
+    padding: 0;
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.texto-slider {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 60px;
+    color: #6699cc;
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide-first {
+    transition: 2s;
+}
+
+.slide img {
+    width: 800px;
+}
+
+.slide-first img {
+    width: 800px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #000000;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: #fff;
+}
+
+#radio1:checked ~ .slide-first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .slide-first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .slide-first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .slide-first {
+    margin-left: -75%;
+}
+
+#radio5:checked ~ .slide-first {
+    margin-left: -100%;
+}
+
+#radio6:checked ~ .slide-first {
+    margin-left: -125%;
+}
+
+.navigation-auto div {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: #6699cc;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: #6699cc;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #6699cc;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: #6699cc;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+    background-color: #6699cc;
+}
+
+#radio6:checked ~ .navigation-auto .auto-btn6 {
+    background-color: #6699cc;
+}
+
 
 /* Seção Contato */
 
 .contato {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(/img/bg-hero-inv.svg);
+    background-image: url(../img/bg-hero-inv.svg);
     width: 100%;
     background-size: cover;
+    background-position: center;
     height: 900px;
-    padding: 50px;
 }
 
 .contato h1 {
@@ -164,22 +309,21 @@ a {
 
 .contato-texto {
     width: 100%;
-    padding: 50px;
+    padding: 50px 0;
     margin-top: 200px;
 }
 
 .form {
     width: 100%;
     overflow: hidden;
-    height: 650px;
-
+    height: 400px;
 }
 
 /* Rodapé */
 
 footer {
     display: flex;
-    padding: 20px;
+    padding: 20px 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
