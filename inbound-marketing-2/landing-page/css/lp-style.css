@@ -20,7 +20,7 @@ body {
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin: 10px 0 0 0;
     background-color: white;
@@ -28,7 +28,7 @@ header {
 }
 
 .logo>img {
-    width: 10%;
+    width: 4.5em;
 }
 
 .logo img, nav {
@@ -115,15 +115,6 @@ section {
 }
 .beneficio:hover p {
     color: #fff;
-}
-
-
-.beneficio i {
-    color: #6699cc;
-    font-size: 1.6rem;
-    background-color: #EDDFB3;
-    border-radius: 50%;
-    padding: 10px;
 }
 
 .beneficio h2 {
@@ -321,6 +312,12 @@ section {
 
 /* Rodapé */
 
+.a {
+    background-color: #223367;
+    margin-top: 10px;
+    z-index: 1;
+}
+
 footer {
     display: flex;
     padding: 20px 0;
@@ -341,4 +338,123 @@ footer>p {
 
 .legal {
     color: black;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .slogan-beneficio {
+        font-size: 3rem;
+        margin: 0;
+    }    
+    .beneficios {
+        width: 400px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .beneficio {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .hero-banner>h1 {
+        font-size: 3rem;
+        padding: 50px;
+        margin: 20px 0 20px 0;
+    }
+    .bg-hero {
+        height: 400px;
+    }
+
+    .texto-slider {
+        font-size: 3rem;
+        margin: 50px 0 50px 0;
+    }
+    .slider {
+        width: 450px;
+        height: 250px;
+    }
+    .slides {
+        width: 100%;
+        
+    }
+    .slide {
+        width: 450px;
+        height: 300px;
+
+    }
+    .slide-first img {
+        width: 450px;
+        height: 300px;
+    }
+    .slide img {
+        width: 450px;
+        height: 300px;
+    }
+    .navigation-auto {
+        display: none;
+    }
+    .manual-navigation {
+        display: none;
+    }
+    #radio1:checked ~ .slide-first {
+        margin-left: 0;
+    }
+    
+    #radio2:checked ~ .slide-first {
+        margin-left: -100%;
+    }
+    
+    #radio3:checked ~ .slide-first {
+        margin-left: -200%;
+    }
+    
+    #radio4:checked ~ .slide-first {
+        margin-left: -300%;
+    }
+    
+    #radio5:checked ~ .slide-first {
+        margin-left: -400%;
+    }
+    
+    #radio6:checked ~ .slide-first {
+        margin-left: -500%;
+    }
+
+    .contato {
+        height: 400px;
+    }
+    .contato h1 {
+        font-size: 2rem;
+        margin: 0;
+    }
+    .contato h2 {
+        margin: 20px 0;
+        padding: 0 55px;
+    }
+    .form {
+        background-color: #223367;
+        
+    }
+    .divisa {
+        height: 100px;
+    }
+
+    .a {
+        background-color: #223367;
+        height: 200px;
+        z-index: 1;
+    }
+
+    footer {
+        position: sticky; 
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        padding-top: 50px;
+        background-color: #fff;
+               
+    }
 }
