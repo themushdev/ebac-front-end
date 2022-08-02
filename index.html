@@ -14,17 +14,23 @@
   <body>
     <header class="header-primario">
       <div class="container">
-        <a href="#"><img src="./img/logo-azul.svg" alt="logo digicom"></a>
-        <nav class="navegacao-primaria">
-          <ul aria-label="Primária" role="list" class="nav-list">
-            <li><a href="#"></a>Home</li>
-            <li><a href="#"></a>Soluções</li>
-            <li><a href="#"></a>Sobre Nós</li>
-            <li><a href="#"></a>Blog</li>
-            <li><a href="#"></a>Contato</li>
-          </ul>
-        </nav>
-        <button class="button">Comece Já</button>
+        <div class="nav-wrapper">
+          <a href="#"><img src="./img/logo-azul.svg" alt="logo digicom"></a>
+          <button class="mobile-nav-toggle" aria-controls="navegacao-primaria" aria-expanded="false">
+            <img class="icon-hamburger" src="./img/icon-hamburger.svg" alt="" aria-hidden="true">
+            <img class="icon-close" src="./img/icon-close.svg" alt="" aria-hidden="true">
+            <span class="visually-hidden">Menu</span></button>
+          <nav class="navegacao-primaria" id="navegacao-primaria">
+            <ul aria-label="Primária" role="list" class="nav-list">
+              <li><a href="#"></a>Home</li>
+              <li><a href="#"></a>Soluções</li>
+              <li><a href="#"></a>Sobre Nós</li>
+              <li><a href="#"></a>Blog</li>
+              <li><a href="#"></a>Contato</li>
+            </ul>
+          </nav>
+          <button class="button | display-sm-none display-md-inline-flex">Comece Já</button>
+        </div>
       </div>
     </header>
 
@@ -83,7 +89,7 @@
         <div class="container">
           <div class="colunas-iguais">
             <div>
-              <p class="fs-secondary-heading fw-bold">Evolua seu negócio agora mesmo e ganhe vantagem competitiva.</p>
+              <p class="fs-secondary-heading fw-bold">Evolua seu negócio agora mesmo.</p>
             </div>
             <div><button class="button" data-type="inverted">Comece Já!</button></div>
           </div>
