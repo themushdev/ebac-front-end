@@ -8,51 +8,42 @@
     <style>
       * {
         font-size: 62.5%;
+        margin: 0;
+        padding: 0;
       }
 
       h1 {
         font-size: 30px;
+        margin: 20px 0;
       }
 
       p {
         font-size: 16px;
+        margin: 20px 0;
       }
 
       @media only screen and (max-width: 600px) {
-        h1 {
-          font-size: 25em;
-        }
-
         img {
           height: auto;
-        }
-
-        p {
-          font-size: 14px;
-        }
-
-        table {
-          width: 100%;
-        }
-
-        a {
-          padding: 1px 10px;
         }
       }
     </style>
   </head>
 
-  <body style="background-color: #6699cc">
+  <body style="background-color: #fff">
     <table
+      class="table"
       style="
-        width: 80%;
+        width: 60%;
+        min-width: 800px;
         margin: 20px auto;
+        padding: 0 10px;
         font-family: sans-serif;
         text-align: center;
       "
     >
       <tr>
-        <td>
+        <td style="background-color: #6699cc; width: 100%">
           <a href="./index.html"
             ><img
               src="https://i.ibb.co/48hQrgX/digi-corrido-branco.png"
@@ -61,7 +52,7 @@
                 max-width: 70px;
                 min-width: 5%;
                 height: auto;
-                margin: 20px auto 20px;
+                margin: 20px auto;
                 border: 0;
                 display: block;
               "
@@ -69,7 +60,7 @@
         </td>
       </tr>
       <tr>
-        <td style="background-color: white; padding: 20px; border-radius: 20px">
+        <td>
           <h1 style="color: #6699cc">
             Olá {nome do destinatário}, nós somos a Digi!
           </h1>
@@ -78,12 +69,7 @@
             ><img
               src="https://idocode.com.br/wp-content/uploads/2020/04/Programac%CC%A7a%CC%83o-na-empresa-de-tecnologia-1024x683.jpg"
               alt=""
-              style="
-                width: 100%;
-                border-radius: 20px;
-                border: 0;
-                display: block;
-              "
+              style="width: 100%; border: 0; display: block"
           /></a>
 
           <div style="width: 90%; display: block; margin: 0 auto">
@@ -107,7 +93,7 @@
           </div>
 
           <a
-            href="#"
+            href="./index.html"
             style="
               background-color: #6699cc;
               color: white;
@@ -115,7 +101,7 @@
               margin: 20px auto 2px;
               border: 1px solid white;
               width: 160px;
-              padding: 10px;
+              padding: 5px 10px;
               border-radius: 10px;
               text-decoration: none;
               font-weight: 600;
