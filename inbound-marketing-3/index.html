@@ -2,6 +2,7 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
+    <title>Digicom - Sua solução para websites</title>
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -11,7 +12,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Vite App</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css"
+    />
+    <script
+      src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js"
+      defer
+    ></script>
   </head>
 
   <body>
@@ -142,11 +150,64 @@
         </div>
       </section>
 
-      <section class="carousel | padding-block-700">
+      <section class="carousel | padding-block-700 text-center">
         <h2 class="fs-secondary-heading fw-bold">
           O que nossos clientes acham da Digi?
         </h2>
         <!-- Carroussel aqui -->
+        <ul class="slider">
+          <li>
+            <img src="img/anisha.jpg" alt="" />
+
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Maria Lee</h3>
+              <p data-width="wide">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis hic porro doloremque recusandae dolor illo, modi natus
+                at dolores ex quasi adipisci aspernatur autem odio rem inventore
+                accusamus quam sapiente?
+              </p>
+            </div>
+          </li>
+          <li>
+            <img src="img/patricia.jpg" alt="" />
+
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Patricia Vasconcelos</h3>
+              <p data-width="wide">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis hic porro doloremque recusandae dolor illo, modi natus
+                at dolores ex quasi adipisci aspernatur autem odio rem inventore
+                accusamus quam sapiente?
+              </p>
+            </div>
+          </li>
+          <li>
+            <img src="img/paulo.jpg" alt="" />
+
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Paulo Almeida</h3>
+              <p data-width="wide">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis hic porro doloremque recusandae dolor illo, modi natus
+                at dolores ex quasi adipisci aspernatur autem odio rem inventore
+                accusamus quam sapiente?
+              </p>
+            </div>
+          </li>
+          <li>
+            <img src="img/roberta.jpg" alt="" />
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Roberta Couto</h3>
+              <p data-width="wide">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis hic porro doloremque recusandae dolor illo, modi natus
+                at dolores ex quasi adipisci aspernatur autem odio rem inventore
+                accusamus quam sapiente?
+              </p>
+            </div>
+          </li>
+        </ul>
         <button class="button">Evolua seu negócio</button>
       </section>
 
