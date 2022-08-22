@@ -64,10 +64,6 @@ nav a:hover {
   color: #fff;
 }
 
-section {
-  padding: 20px 0;
-}
-
 /* Banner Hero e texto */
 
 .bg-hero {
@@ -80,20 +76,75 @@ section {
 
 /* Beneficios */
 
+.cta-inicio {
+  width: 100%;
+  background-color: #28186a;
+  padding: 20px 0;
+}
+
 .slogan-beneficio {
+  width: 65%;
+  gap: 100px;
+  justify-content: center;
+  display: flex;
+  margin: 60px auto;
+  align-items: center;
+}
+
+.slogan-beneficio h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #ffffff;
+  width: 50%;
+}
+
+.slogan-beneficio a {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #28186a;
+  transition: 0.5s ease-in-out;
+}
+
+.slogan-beneficio button {
+  background-color: #fff;
+  border: transparent;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px 25px;
+  cursor: pointer;
+  transform: scale(1, 1);
+  transition: 0.5s ease-in-out;
+}
+
+.slogan-beneficio button:hover {
+  background-color: #fff;
+  transform: scale(1.1, 1.1);
+}
+
+.slogan-beneficio a:hover {
+  color: #28186a;
+}
+
+.subtitulo {
   text-align: center;
   font-size: 4rem;
   font-weight: 800;
-  margin: 120px 0;
+  margin: 65px 0 20px 0;
   color: #6699cc;
   align-items: center;
+}
+
+.carrossel {
+  background-color: #28186a;
+  padding: 20px 0;
 }
 
 .beneficios {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 50px 50px 10px 50px;
+  margin: 50px 50px 150px 50px;
   color: #fff;
 }
 
@@ -152,7 +203,7 @@ section {
   text-align: center;
   font-size: 4rem;
   font-weight: 800;
-  margin: 60px;
+  margin: 54px 60px 60px;
   color: #6699cc;
 }
 
@@ -278,10 +329,13 @@ section {
 
 .botao-cta {
   margin-top: 80px;
+  margin-bottom: 80px;
   width: 100%;
   text-align: center;
   justify-content: center;
   align-items: center;
+  transition: 0.5s ease-in-out;
+  transform: scale(1, 1);
 }
 
 .texto-botao-cta {
@@ -289,35 +343,35 @@ section {
   font-weight: 600;
   text-align: center;
   background-color: #fff;
-  color: #6699cc;
-  border: 2px solid #6699cc;
-  padding: 15px 10px;
-  border-radius: 5px;
+  color: #28186a;
+  border: transparent;
+  padding: 20px 25px;
+  border-radius: 10px;
   cursor: pointer;
   transform: scale(1, 1);
-
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 .texto-botao-cta:hover {
-  background-color: #6699cc;
-  color: #fff;
-  border: 2px solid #fff;
+  transform: scale(1.1, 1.1);
+}
+
+.botao-cta:hover {
   transform: scale(1.1, 1.1);
 }
 
 /* Seção Contato */
 
 .contato {
-  background-image: url(../img/bg-hero-inv.svg);
+  background: #fff;
   width: 100%;
   background-size: cover;
   background-position: center;
-  height: 900px;
+  height: 566px;
 }
 
 .contato h1 {
-  color: white;
+  color: #223367;
   text-align: center;
   font-size: 4rem;
   font-weight: 800;
@@ -325,7 +379,7 @@ section {
 }
 
 .contato h2 {
-  color: white;
+  color: #223367;
   text-align: center;
   font-size: 1.6rem;
   font-weight: 300;
@@ -334,21 +388,22 @@ section {
 
 .contato-texto {
   width: 100%;
-  padding: 50px 0;
-  margin-top: 200px;
+  padding: 0 0 50px;
 }
 
 .form {
   width: 100%;
   overflow: hidden;
-  height: 400px;
+  height: 372px;
 }
 
 /* Rodapé */
 
 footer {
   display: flex;
-  padding: 10px 0;
+  background-color: #223367;
+  padding: 30px 0;
+  color: #fff;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -369,16 +424,27 @@ footer > p {
 }
 
 @media only screen and (max-width: 800px) {
-  .slogan-beneficio {
-    font-size: 3rem;
-    margin: 0;
+  header {
+    flex-direction: column;
   }
+
+  .slogan-beneficio {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .slogan-beneficio h1 {
+    width: 90%;
+    font-size: 2.5rem;
+  }
+
   .beneficios {
-    width: 40rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0 auto 60px;
     text-align: center;
   }
   .beneficio {
@@ -397,16 +463,21 @@ footer > p {
     overflow: hidden;
   }
 
+  .subtitulo h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+  }
+
   .texto-slider {
     font-size: 3rem;
     margin: 50px 0 50px 0;
   }
   .slider {
-    width: 450px;
+    width: 350px;
     height: 250px;
   }
   .slides {
-    width: 100%;
+    width: 131%;
   }
   .slide {
     width: 450px;
@@ -451,7 +522,10 @@ footer > p {
   }
 
   .contato {
-    height: 400px;
+    height: 572px;
+  }
+  .contato-texto {
+    margin-top: 60px;
   }
   .contato h1 {
     font-size: 2rem;
@@ -462,16 +536,15 @@ footer > p {
     padding: 0 55px;
   }
   .form {
-    background-color: #223367;
+    background-color: #fff;
   }
 
   footer {
-    position: absolute;
     width: 100%;
     top: 2900px;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: #223367;
     padding-bottom: 20px;
   }
 }
