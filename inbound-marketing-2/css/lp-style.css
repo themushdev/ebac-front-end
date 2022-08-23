@@ -1,5 +1,6 @@
 * {
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -473,11 +474,11 @@ footer > p {
     margin: 50px 0 50px 0;
   }
   .slider {
-    width: 350px;
+    width: 320px;
     height: 250px;
   }
   .slides {
-    width: 131%;
+    width: 137%;
   }
   .slide {
     width: 450px;
@@ -533,7 +534,6 @@ footer > p {
   }
   .contato h2 {
     margin: 20px 0;
-    padding: 0 55px;
   }
   .form {
     background-color: #fff;
